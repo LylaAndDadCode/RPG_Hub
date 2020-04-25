@@ -1,0 +1,12 @@
+
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  font-family: Times, Times New Roman, serif;
+}
+
+#page {
+   /* background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+   background-image: linear-gradient(to bottom right, darkred, red);
+}
