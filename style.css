@@ -4,9 +4,12 @@ h1, h2 {
   color: white;
   text-align: center;
   font-family: Times, Times New Roman, serif;
+  padding: 5px
 }
 
 #page {
    /* background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
-   background-image: linear-gradient(to bottom right, darkred, red);
+   /*background-image: linear-gradient(to bottom right, darkred, red); */
+   background-image: url("pics/banner.jpeg");
+   background-size: cover;
 }
