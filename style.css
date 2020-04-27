@@ -1,5 +1,5 @@
 
-
+/*
 h1, h2 {
   color: white;
   text-align: center;
@@ -8,8 +8,139 @@ h1, h2 {
 }
 
 #page {
-   /* background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
-   /*background-image: linear-gradient(to bottom right, darkred, red); */
-   background-image: url("pics/banner.jpeg");
-   background-size: cover;
+   /*background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity 
+   background-image: linear-gradient(to bottom right, darkred, red); 
+   /*background-image: url("pics/banner.jpeg");
+    background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative; 
 }
+*/
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Times, Times New Roman, serif;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: none;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .title:hover {
+  color: white
+  /*
+  font-size: 2em;
+  */
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: red;
+}
+
+header {
+  text-align: center;
+  background: url('pics/banner_orginal.jpeg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .title {
+    display: block;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
