@@ -61,10 +61,10 @@ a:hover {
   padding: 0;
 }
 .nav .title:hover {
-  color: white
-  /*
-  font-size: 2em;
-  */
+  color: red;
+  text-decoration: underline;
+  font-size: 1.8em;
+  
 }
 .nav li {
   padding: 5px 10px 10px 10px;
