@@ -21,7 +21,16 @@
     </header>
     <h2>Online Dice</h2>
     
-    <button type="button" onclick="roll(10)">Roll</button>
+    <label>Sides of die</label>
+    <input type="text" id = sides name="sides">
+    
+    <br>
+    
+    <label>Number of die</label>
+    <input type="text" id = number name="number">
+    <br>
+    
+    <button type="button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
  
     <p id="demo"</p>
     <footer><p class = copyright title = "We are not Lawyers">&copy; 2020 LylaAndDadCode</p></footer>
