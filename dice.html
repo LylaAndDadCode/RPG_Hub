@@ -25,14 +25,16 @@
     <input type="text" id = sides name="sides">
     
     <br>
-    
+    <form>
     <label>Number of die</label>
     <input type="text" id = number name="number">
     <br>
+    <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
+    <br>
+    </form>
+    <p id="result"></p>
+    <p id="sum"></p>
     
-    <button type="button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
- 
-    <p id="demo"</p>
     <footer><p class = copyright title = "We are not Lawyers">&copy; 2020 LylaAndDadCode</p></footer>
  
     <script src="dice.js"></script>
