@@ -32,6 +32,31 @@ body {
   color: #222;
   background: #35586C; /*#f7f5f0 */
 }
+/*
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+*/
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('pics/dice2.png');
+/*  background-position: 10px 10px; */
+  background-repeat: no-repeat;
+  padding: 6px 20px 6px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+
+
+input[type=text]:focus {
+  width: 25%;
+}
 /* Link Styles */
 
 a {
@@ -62,14 +87,14 @@ a:hover {
 
 
 .roll-button:hover {
-  background-color: #white;
-  color: #C0D9D9; 
-   border: 2px solid #C0D9D9;
+  background-color: #35586C;
+  color: #6C7B8B; 
+  border: 2px solid #6C7B8B;
 }
 
 .main-nav {
   width: 100%;
-  background: #C0D9D9;
+  background: #6C7B8B; //* #C0D9D9; */
   min-height: 30px;
   padding: 10px;
   position: fixed;

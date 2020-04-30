@@ -21,17 +21,23 @@
     </header>
     <h2>Online Dice</h2>
     
-    <label>Sides of die</label>
-    <input type="text" id = sides name="sides">
-    
-    <br>
-    <form>
-    <label>Number of die</label>
-    <input type="text" id = number name="number">
-    <br>
-    <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
-    <br>
-    </form>
+    <div class="container">
+      <form>
+        <p>
+          <label>Sides of die</label>
+          <input type="text" id = sides name="sides">
+        </p>
+        <p>
+          <label>Number of die</label>
+          <input type="text" id = number name="number">
+        </p>
+      </form>
+    </div>
+        
+    <p>
+      <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
+    </p>
+  
     <p id="result"></p>
     <p id="sum"></p>
     
