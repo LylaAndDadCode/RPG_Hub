@@ -50,8 +50,9 @@ input[type=text] {
   background-repeat: no-repeat;
   padding: 6px 20px 6px 40px;
   transition: width 0.4s ease-in-out;
-}
+  &:focus { & + label { opacity: 0; } } }
 
+      
 
 
 input[type=text]:focus {
