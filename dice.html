@@ -27,12 +27,14 @@
         <div>
           <!-- <label>Sides of die</label> -->
           <input type="text" id = "sides" name="sides" placeholder="Sides of die">
+          <label class="error" id='sidesError'></label>
           <!-- <label for="sides">Sides of die</label> -->
         </div>
         <br>
         <div>
           <!-- <label>Number of die</label> -->
           <input type="text" id = "number" name="number" placeholder="Number of sides">
+          <label class="error" id='numberError'></label>
           <!-- <label for="number">Number of die</label> -->
         </div>
       </form>
@@ -44,7 +46,9 @@
   
     <p id="result"></p>
     <p id="sum"></p>
-    
+    <p>
+    <div id="dice">6</div>
+    </p>
     <footer><p class = copyright title = "We are not Lawyers">&copy; 2020 LylaAndDadCode</p></footer>
  
     <script src="dice.js"></script>
