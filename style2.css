@@ -16,7 +16,7 @@
 /* Position the navbar container inside the image */
 .container {
   position: absolute; 
-  margin: 30px 0px 0px 0px;
+  margin: 5px 20px;
   width: 100%;
 }
 
@@ -51,4 +51,17 @@
 
 .main-nav a:hover {
   color: lightblue;
+}
+footer { 
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+
+@media (min-width: 769px){
+  
+  .wrap {
+    min-height: calc(100vh - 81.77px);
+  }
 }
