@@ -13,10 +13,12 @@
   position: relative;
 }
 
+
+
 /* Position the navbar container inside the image */
 .container {
-  position: absolute; 
-  margin: 5px 20px;
+  /*position: absolute; */
+  margin-left: 0px;
   width: 100%;
 }
 
@@ -30,6 +32,15 @@
 .main-nav a {
   float: left;
   color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main-nav div {
+  float: left;
+  color: lightblue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,10 +63,93 @@
 .main-nav a:hover {
   color: lightblue;
 }
+
+.main-nav div:hover {
+  color: red;
+}
+
 footer { 
 	text-align: center;
 	padding: 2em 0;
 	background: #d9e4ea;
+}
+
+input[type="text"].error {
+    border: 2px solid red;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('pics/dice2.png');
+/*  background-position: 10px 10px; */
+  background-repeat: no-repeat;
+  padding: 6px 20px 6px 40px;
+  transition: width 0.4s ease-in-out;
+  &:focus { & + label { opacity: 0; } } 
+}
+      
+
+
+input[type=text]:focus {
+  width: 25%;
+}
+
+
+
+/* Section Styles */
+
+
+
+.roll-button {
+  background-color: #6C7B8B; /*#C0D9D9; */
+  border: 2px solid #35586C;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+
+
+.roll-button:hover {
+  background-color: #35586C;
+  color: #6C7B8B; 
+  border: 2px solid #6C7B8B;
+}
+
+
+.error {
+  color: red;
+  font: italic bold 12px/30px Georgia, serif;
+}
+/*
+#dice {
+  color:black;
+  background-color:white;
+  padding: 5px;
+}
+*/
+.dice {
+ /* float: left; */
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+/*  clear: both; */
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  left: 50%; margin-left: 225px;
 }
 
 

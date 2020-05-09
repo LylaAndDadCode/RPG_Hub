@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>RPG Hub</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="title">Roll Initiative</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Dice</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <header>
+    
+    </header>
+    <h2>Online Dice</h2>
+    
+    <div class="container">
+      <form>
+        <div>
+          <!-- <label>Sides of die</label> -->
+          <input type="text" id = "sides" name="sides" placeholder="Sides of die">
+          <label class="error" id='sidesError'></label>
+          <!-- <label for="sides">Sides of die</label> -->
+        </div>
+        <br>
+        <div>
+          <!-- <label>Number of die</label> -->
+          <input type="text" id = "number" name="number" placeholder="Number of sides">
+          <label class="error" id='numberError'></label>
+          <!-- <label for="number">Number of die</label> -->
+        </div>
+      </form>
+    </div>
+        
+    <p>
+      <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
+    </p>
+  
+    <div class ="dice" id="result"></div>
+    <p id="sum"></p>
+ <!--   <p>
+    <div id="dice">6</div>
+    </p> -->
+    <footer><p class = copyright title = "We are not Lawyers">&copy; 2020 LylaAndDadCode</p></footer>
+ 
+    <script src="dice.js"></script>
+  </body>
+    
+	
+</html>
