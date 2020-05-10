@@ -13,7 +13,9 @@
   position: relative;
 }
 
-
+body{
+      background: #35586C
+}
 
 /* Position the navbar container inside the image */
 .container {

@@ -1,0 +1,51 @@
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: all .5s;
+}
+
+.fa-github {
+  background: purple;
+  color: white;
+}
+
+.fa-github:hover {
+    /*opacity: 0.7;*/
+    background: white;
+    color: purple;
+    border: solid 1px purple; 
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background: white;
+  color: #55ACEE;
+  border: solid 1px #55ACEE; 
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-youtube:hover {
+  background:  white;
+  color: #bb0000;
+  border: solid 1px #bb0000; 
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
