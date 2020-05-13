@@ -12,7 +12,7 @@
   <body>
     <div class="wrap">
       <header class="main-header">
-        <div class="container">
+        <div class="container2">
           <div class="main-nav">
             <a href="index.html">Home</a>
             <div>Dice</div>
@@ -27,29 +27,33 @@
       <h2>Online Dice</h2>
     
       <div class="container">
-        <form>
-          <div>
-            <!-- <label>Sides of die</label> -->
-            <input type="text" id = "sides" name="sides" placeholder="Sides of die">
-            <label class="error" id='sidesError'></label>
-            <!-- <label for="sides">Sides of die</label> -->
+        <div class="box">
+          <form>
+            <div>
+              <!-- <label>Sides of die</label> -->
+              <input type="text" id = "sides" name="sides" placeholder="Sides of die">
+              <label class="error" id='sidesError'></label>
+              <!-- <label for="sides">Sides of die</label> -->
+            </div>
+            <br>
+            <div>
+              <!-- <label>Number of die</label> -->
+              <input type="text" id = "number" name="number" placeholder="Number of sides">
+              <label class="error" id='numberError'></label>
+              <!-- <label for="number">Number of die</label> -->
+            </div>
+            <div>
+              <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
+            </div>
+          </form>
+          <div class ="dice" id="result">
+            
           </div>
           <br>
-          <div>
-            <!-- <label>Number of die</label> -->
-            <input type="text" id = "number" name="number" placeholder="Number of sides">
-            <label class="error" id='numberError'></label>
-            <!-- <label for="number">Number of die</label> -->
-          </div>
-        </form>
-      </div>
           
-      <p>
-        <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
-      </p>
-    
-      <div class ="dice" id="result"></div>
-      <p id="sum"></p>
+          <p id="sum"></p>
+        </div>  
+      </div>
     </div>
          
     <footer>

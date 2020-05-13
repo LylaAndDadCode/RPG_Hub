@@ -7,32 +7,43 @@ function roll(numSides, numberDie){
   errorText("sidesError", " ");
   errorText("numberError", " ");
   
+  var removeDice = document.getElementById("result");
+
+  
+  while (removeDice.hasChildNodes()) {  
+    removeDice.removeChild(removeDice.firstChild);
+  }
+  
   if(numSides >=2 && numberDie >= 1) {
 
     while (x < numberDie) {
       
       rolls= Math.floor(Math.random() * numSides) + 1;
       sum = sum + rolls;
-      result = result + rolls.toString() + "   ";
+      //result = result + rolls.toString() + "   
+      
+      let dice = document.createElement("div"); //<div></div>
+      dice.innerHTML = rolls.toString();        //<div>result</div>
+      document.getElementById("result").appendChild(dice); 
       
       x = x + 1;
     }
     
     
     
-    document.getElementById('result').innerHTML = result;
+    //document.getElementById('result').innerHTML = result;
     document.getElementById('sum').innerHTML = "Sum of the dice is: " + sum;
     return;
   } else {
       
-      if (numSides < 2) {
-        errorField("sides");
-        errorText("sidesError", "Must have more than 1 side");        
-      }
-      if (numberDie < 1) {
-        errorField("number");
-        errorText("numberError", "Must have at least 1 dice");
-      }
+    if (numSides < 2) {
+      errorField("sides");
+      errorText("sidesError", "Must have more than 1 side");        
+    }
+    if (numberDie < 1) {
+      errorField("number");
+      errorText("numberError", "Must have at least 1 dice");
+    }
   }
   
 }
