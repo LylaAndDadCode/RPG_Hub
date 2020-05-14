@@ -47,15 +47,24 @@ body{
 }
 
 .box {
+  
   align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50%;
-    background-color: black;
-    padding: 25px;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  padding: 25px;
   
 }
 
+.box-about{
+  opacity: 75%;
+}
+
+.inside-box{
+  display: inline-block
+  
+}
   .container-dice::before {    
       content: "";
       background-image: url('pics/banner_orginal.jpeg');
@@ -162,7 +171,18 @@ input[type=text]:focus {
 
 /* Section Styles */
 
+.about-text a:visited {
+  color: red;
+}
 
+.about-text{
+  color:white;
+  opacity: 100%;
+  text-align: center;
+  
+
+  
+}
 
 .roll-button {
   background-color: #6C7B8B; /*#C0D9D9; */
