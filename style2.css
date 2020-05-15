@@ -13,6 +13,16 @@
   position: relative;
 }
 
+a {
+  color: white;
+  transition: all .5s;
+}
+
+a:hover {
+  color: red;
+  transition: all .5s;
+}
+
 body{
       
      
@@ -171,9 +181,6 @@ input[type=text]:focus {
 
 /* Section Styles */
 
-.about-text a:visited {
-  color: red;
-}
 
 .about-text{
   color:white;

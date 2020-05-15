@@ -28,7 +28,7 @@
     
       <div class="container">
         <div class="box">
-          <form>
+          <form autocomplete="off">
             <div>
               <!-- <label>Sides of die</label> -->
               <input type="text" id = "sides" name="sides" placeholder="Sides of die">
@@ -42,6 +42,7 @@
               <label class="error" id='numberError'></label>
               <!-- <label for="number">Number of die</label> -->
             </div>
+            
             <div>
               <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
             </div>

@@ -1,4 +1,9 @@
-function roll(numSides, numberDie){
+
+function sleep (timeMs) {
+  return new Promise(resolve) => setTimeout(resolve, timeMs);
+}
+
+async function roll(numSides, numberDie){
   let x = 0;
   let result = "";
   let sum = 0;
@@ -15,22 +20,42 @@ function roll(numSides, numberDie){
   }
   
   if(numSides >=2 && numberDie >= 1) {
-
+    //make the empty dice
+    for (let y = 0; y < numberDie; y++){
+      let emptyDice = document.createElement("div"); //<div></div>
+      emptyDice.setAttribute("id", "dice" + y);
+      document.getElementById("result").appendChild(emptyDice); 
+    }
+    // Usage!
+    
+      for (let y = 0; y < 50; y++) {
+        await sleep(100).then(() => {
+          if (y % 2 == 0){
+            for (let z = 0; z < numberDie; z++){
+              document.getElementById("dice" + z).innerHTML = '/';
+            }
+          } else {
+            for (let z = 0; z < numberDie; z++){
+              document.getElementById("dice" + z).innerHTML = '\\';
+            }
+          }
+          
+        })
+      }
+   
     while (x < numberDie) {
       
       rolls= Math.floor(Math.random() * numSides) + 1;
       sum = sum + rolls;
       //result = result + rolls.toString() + "   
       
-      let dice = document.createElement("div"); //<div></div>
-      dice.innerHTML = rolls.toString();        //<div>result</div>
-      document.getElementById("result").appendChild(dice); 
+      //let dice = document.createElement("div"); //<div></div>
+      document.getElementById("dice" + x).innerHTML = rolls.toString();    
+      //document.getElementById("result").appendChild(dice); 
       
       x = x + 1;
     }
-    
-    
-    
+   
     //document.getElementById('result').innerHTML = result;
     document.getElementById('sum').innerHTML = "Sum of the dice is: " + sum;
     return;
