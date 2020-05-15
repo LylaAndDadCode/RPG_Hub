@@ -1,6 +1,6 @@
 
 function sleep (timeMs) {
-  return new Promise(resolve) => setTimeout(resolve, timeMs);
+  return new Promise((resolve) => setTimeout(resolve, timeMs));
 }
 
 async function roll(numSides, numberDie){
