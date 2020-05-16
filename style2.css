@@ -28,19 +28,22 @@ body{
      
 }
 
+
+
 /* Position the navbar container inside the image */
 .container {
   /*position: absolute; */
   margin-top: 0px;
   width: 100%;
-  height: 500px;
+  height: 70vh;
   background-image: url("pics/banner_orginal.jpeg"); /*#35586C: */
   background-size: cover;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
+/*
 .container-dice {
   
   position: relative; 
@@ -53,18 +56,16 @@ body{
   /*margin-top: 0px;
   width: 100%;
   height: 500px;
-  content: "";*/
-}
+  content: "";
+}*/
 
 .box {
-  
+  background-color: black;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 50%;
-  background-color: black;
-  padding: 25px;
-  
+  width: 70%;
+  height: 70%;
+  padding: 10px
 }
 
 .box-about{
@@ -173,9 +174,7 @@ input[type=text] {
       
 
 
-input[type=text]:focus {
-  width: 25%;
-}
+
 
 
 
@@ -240,13 +239,23 @@ input[type=text]:focus {
 
 #sum {
   color: white;
-  float: left;
+  text-align: left;
 }
 
 
-@media (min-width: 769px){
+@media (min-width: 796px){ /* was 796PX 528*/
   
   .wrap {
     min-height: calc(100vh - 81.77px);
   }
+input[type=text]:focus {
+  width: 25%;
+  }
+  
+.box {
+    width: 50%;
+    height: 50%;
+    padding: 25px;  
+  }  
+
 }

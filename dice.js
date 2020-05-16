@@ -30,6 +30,11 @@ async function roll(numSides, numberDie){
     
       for (let y = 0; y < 50; y++) {
         await sleep(100).then(() => {
+          
+          for (let z = 0; z < numberDie; z++){
+              document.getElementById("dice" + z).innerHTML = Math.floor(Math.random() * numSides) + 1;
+            }
+          /*
           if (y % 2 == 0){
             for (let z = 0; z < numberDie; z++){
               document.getElementById("dice" + z).innerHTML = '/';
@@ -38,7 +43,7 @@ async function roll(numSides, numberDie){
             for (let z = 0; z < numberDie; z++){
               document.getElementById("dice" + z).innerHTML = '\\';
             }
-          }
+          } */
           
         })
       }
