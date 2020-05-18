@@ -10,6 +10,17 @@
   border: solid 1px #d9e4ea;
 }
 
+.fa-bars {
+  border: none;
+  text-align: none;
+  padding: 0px;
+  font-size: 5px;
+  width: 1px;
+  margin: 0px;
+  transition: all .5s;
+}
+ 
+
 .fa-github {
   background: purple;
   color: white;
