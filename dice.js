@@ -19,6 +19,8 @@ async function roll(numSides, numberDie){
     removeDice.removeChild(removeDice.firstChild);
   }
   
+  document.getElementById('sum').innerHTML = "";
+  
   if(numSides >=2 && numberDie >= 1) {
     //make the empty dice
     for (let y = 0; y < numberDie; y++){
@@ -26,43 +28,57 @@ async function roll(numSides, numberDie){
       emptyDice.setAttribute("id", "dice" + y);
       document.getElementById("result").appendChild(emptyDice); 
     }
-    // Usage!
     
-      for (let y = 0; y < 50; y++) {
-        await sleep(100).then(() => {
-          
+    // loop to change values on dice to simulate a roll
+    for (let y = 0; y < 50; y++) {
+      await sleep(100).then(() => {
+        if (numSides != 2){ 
           for (let z = 0; z < numberDie; z++){
-              document.getElementById("dice" + z).innerHTML = Math.floor(Math.random() * numSides) + 1;
-            }
-          /*
+             document.getElementById("dice" + z).innerHTML = Math.floor(Math.random() * numSides) + 1;
+          }
+          
+        } else { // if a 2 sides dice then change to a coin and use H for heads and T for tails
           if (y % 2 == 0){
             for (let z = 0; z < numberDie; z++){
-              document.getElementById("dice" + z).innerHTML = '/';
+              document.getElementById("dice" + z).innerHTML = 'H';
             }
           } else {
-            for (let z = 0; z < numberDie; z++){
-              document.getElementById("dice" + z).innerHTML = '\\';
+            for (let z = 0; z < numberDie; z++) {
+              document.getElementById("dice" + z).innerHTML = 'T';
             }
-          } */
-          
-        })
-      }
+          } 
+        }
+      })
+    }
    
     while (x < numberDie) {
       
       rolls= Math.floor(Math.random() * numSides) + 1;
       sum = sum + rolls;
-      //result = result + rolls.toString() + "   
-      
-      //let dice = document.createElement("div"); //<div></div>
-      document.getElementById("dice" + x).innerHTML = rolls.toString();    
-      //document.getElementById("result").appendChild(dice); 
-      
+      if (numSides == 2) {
+        let heads = 0;
+        if (rolls == 1) {
+          heads = 'T';
+        } else {
+          heads = 'H';
+        }
+        document.getElementById("dice" + x).innerHTML = heads;   
+      } else {
+        //result = result + rolls.toString() + "   
+        
+        //let dice = document.createElement("div"); //<div></div>
+        document.getElementById("dice" + x).innerHTML = rolls.toString();    
+        //document.getElementById("result").appendChild(dice); 
+      }
       x = x + 1;
     }
    
     //document.getElementById('result').innerHTML = result;
-    document.getElementById('sum').innerHTML = "Sum of the dice is: " + sum;
+    if (numSides == 2) {
+      document.getElementById('sum').innerHTML = "Coins aren't Dice, <strong>PSA!</strong>";
+    } else {
+      document.getElementById('sum').innerHTML = "Sum of the dice is: " + sum;
+    }
     return;
   } else {
       

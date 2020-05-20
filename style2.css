@@ -241,8 +241,15 @@ input[type=text] {
   color: white;
   text-align: left;
 }
+/*
+.hide-on-mobile{
+  display: none;
+}
 
-
+.hide-on-mobile:hover{
+  display: inline-block;
+}
+*/
 @media (min-width: 796px){ /* was 796PX 528*/
   
   .wrap {
@@ -254,11 +261,11 @@ input[type=text]:focus {
   
 .fa.fa-bars {
   display: none;
-  //visibility: hidden;
+  /* visiility: hidden; */
 }
   
 input[type=text] {
-width: 130px;  
+width: 150px;  
 }
   
 .box {
