@@ -158,7 +158,7 @@ input[type="text"].error {
 }
 
 input[type=text] {
-  width: 60%;
+  width: 70%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -171,12 +171,6 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
   &:focus { & + label { opacity: 0; } } 
 }
-      
-
-
-
-
-
 
 /* Section Styles */
 
@@ -224,16 +218,24 @@ input[type=text] {
   padding: 5px;
 }
 */
+.dice {
+  text-align: center;
+   margin: auto;
+   position: absolute;
+}
+
 .dice div{
- float: left; 
+  float: left; 
   height: 20px;
   width: 20px;
   margin: 10px;
+  
   border: 1px solid black;
 /*  clear: both; */
   background-color: white;
 /*  position: absolute; */
-  text-align: center;
+ display: inline-block
+  
 /*  left: 50%; margin-left: 225px; */
 }
 
@@ -274,4 +276,8 @@ width: 150px;
     padding: 25px;  
   }  
 
+.button-div {  
+  padding: 15px 32px;
+  text-align: center;
+}
 }
