@@ -218,10 +218,15 @@ input[type=text] {
   padding: 5px;
 }
 */
-.dice {
+
+.new-dice {
   text-align: center;
+}
+
+.dice {
+  
    margin: auto;
-   position: absolute;
+  display: inline-block
 }
 
 .dice div{
@@ -234,7 +239,7 @@ input[type=text] {
 /*  clear: both; */
   background-color: white;
 /*  position: absolute; */
- display: inline-block
+ 
   
 /*  left: 50%; margin-left: 225px; */
 }
