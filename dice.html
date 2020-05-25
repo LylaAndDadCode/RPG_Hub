@@ -33,15 +33,15 @@
       -->   
       <div class="container">
         <div class="box">
-          <form autocomplete="off" class="button-div">
-            <div>
+          <form autocomplete="off" class="form-div">
+            <div class="input-div">
               <!-- <label>Sides of die</label> -->
               <input type="text" id = "sides" name="sides" placeholder="Sides of die">
               <label class="error" id='sidesError'></label>
               <!-- <label for="sides">Sides of die</label> -->
             </div>
-            <br>
-            <div>
+         
+            <div class="input-div">
               <!-- <label>Number of die</label> -->
               <input type="text" id = "number" name="number" placeholder="Number of dice">
               <label class="error" id='numberError'></label>
@@ -51,15 +51,18 @@
             <div class ="button-div">
               <button type="button" class="roll-button" onclick="roll(document.getElementById('sides').value,document.getElementById('number').value)">Roll</button>
             </div>
-          
-            <br>
+            
             <div class ="dice-div">
               <div class ="dice" id="result">
+                <!-- dice.js will add dice here -->
               </div>
             </div>
-            <br>
-            
-          <div><label id="sum"></label></div>
+              
+            <div>
+              <label id="sum">
+                <!-- dice.js will add sum of dice here -->
+              </label>
+            </div>
           </form>
         </div>  
       </div>

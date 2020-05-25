@@ -25,7 +25,7 @@ async function roll(numSides, numberDie){
     //make the empty dice
     for (let y = 0; y < numberDie; y++){
       let emptyDice = document.createElement("div"); //<div></div>
-      emptyDice.setAttribute("id", "dice" + y);
+      emptyDice.setAttribute("id", "dice" + y); //<div id="dice1"></div>
       document.getElementById("result").appendChild(emptyDice); 
     }
     

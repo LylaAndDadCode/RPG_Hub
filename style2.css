@@ -219,7 +219,7 @@ input[type=text] {
 }
 */
 
-.dice-div  {
+.dice-div   {
   text-align: center;
 }
 
@@ -257,9 +257,17 @@ input[type=text] {
   display: inline-block;
 }
 */
-.button-div {  
-  
+.form-div {  
   text-align: center;
+}
+
+.button-div{
+  margin:10px;
+}
+
+
+.input-div {
+  margin:15px;
 }
 @media (min-width: 796px){ /* was 796PX 528*/
   
@@ -285,7 +293,7 @@ width: 150px;
     padding: 25px;  
   }  
 
-.button-div {  
+.form-div {  
   padding: 15px 32px;
 
 }
