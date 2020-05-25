@@ -76,16 +76,16 @@ body{
   display: inline-block
   
 }
-  .container-dice::before {    
-      content: "";
-      background-image: url('pics/banner_orginal.jpeg');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.1;
+.container-dice::before {    
+    content: "";
+    background-image: url('pics/banner_orginal.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
 }
   
  /* 
@@ -219,7 +219,7 @@ input[type=text] {
 }
 */
 
-.new-dice {
+.dice-div  {
   text-align: center;
 }
 
@@ -257,6 +257,10 @@ input[type=text] {
   display: inline-block;
 }
 */
+.button-div {  
+  
+  text-align: center;
+}
 @media (min-width: 796px){ /* was 796PX 528*/
   
   .wrap {
@@ -283,6 +287,6 @@ width: 150px;
 
 .button-div {  
   padding: 15px 32px;
-  text-align: center;
+
 }
 }
