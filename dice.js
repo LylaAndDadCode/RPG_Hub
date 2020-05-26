@@ -32,12 +32,22 @@ async function roll(numSides, numberDie){
     // loop to change values on dice to simulate a roll
     for (let y = 0; y < 50; y++) {
       await sleep(100).then(() => {
-        if (numSides != 2){ 
+        //if (numSides != 2){ 
           for (let z = 0; z < numberDie; z++){
-             document.getElementById("dice" + z).innerHTML = Math.floor(Math.random() * numSides) + 1;
+            let randomNum = Math.floor(Math.random() * numSides) + 1
+            if (numSides != 2){
+             document.getElementById("dice" + z).innerHTML = randomNum;
+            } else {
+              if (randomNum == 1) {
+                document.getElementById("dice" + z).innerHTML = 'H';
+              } else {
+                 document.getElementById("dice" + z).innerHTML = 'T';
+              }              
+              
+            }
           }
           
-        } else { // if a 2 sides dice then change to a coin and use H for heads and T for tails
+/*        } else { // if a 2 sides dice then change to a coin and use H for heads and T for tails
           if (y % 2 == 0){
             for (let z = 0; z < numberDie; z++){
               document.getElementById("dice" + z).innerHTML = 'H';
@@ -46,8 +56,8 @@ async function roll(numSides, numberDie){
             for (let z = 0; z < numberDie; z++) {
               document.getElementById("dice" + z).innerHTML = 'T';
             }
-          } 
-        }
+          } */
+        
       })
     }
    

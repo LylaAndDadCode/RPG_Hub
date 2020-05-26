@@ -269,7 +269,22 @@ input[type=text] {
 .input-div {
   margin:15px;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: all .5s;
+  border: solid 1px #d9e4ea;
+}
+
 @media (min-width: 796px){ /* was 796PX 528*/
+
+.fa {
+  width: 50px;
+}
   
   .wrap {
     min-height: calc(100vh - 81.77px);
