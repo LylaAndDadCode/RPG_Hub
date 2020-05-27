@@ -60,17 +60,21 @@ async function roll(numSides, numberDie){
         
       })
     }
-   
-    while (x < numberDie) {
+    
+      let headsCount = 0;
+      let tailsCount = 0;
+      while (x < numberDie) {
       
       rolls= Math.floor(Math.random() * numSides) + 1;
       sum = sum + rolls;
       if (numSides == 2) {
         let heads = 0;
         if (rolls == 1) {
+          tailsCount ++;
           heads = 'T';
         } else {
           heads = 'H';
+          headsCount ++;
         }
         document.getElementById("dice" + x).innerHTML = heads;   
       } else {
@@ -85,7 +89,8 @@ async function roll(numSides, numberDie){
    
     //document.getElementById('result').innerHTML = result;
     if (numSides == 2) {
-      document.getElementById('sum').innerHTML = "Coins aren't Dice, <strong>PSA!</strong>";
+      document.getElementById('sum').innerHTML = "Coins aren't dice, <strong>PSA.</strong><br>Heads: " + headsCount + " Tails: " + tailsCount;
+      document.getElementById('sum').innerHTML = "Coins aren't dice, <strong>PSA.</strong><br>Heads: " + headsCount + " Tails: " + tailsCount;
     } else {
       document.getElementById('sum').innerHTML = "Sum of the dice is: " + sum;
     }
