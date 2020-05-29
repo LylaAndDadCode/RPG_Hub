@@ -3,6 +3,15 @@ function sleep (timeMs) {
   return new Promise((resolve) => setTimeout(resolve, timeMs));
 }
 
+function clickHamburger() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 async function roll(numSides, numberDie){
   let x = 0;
   let result = "";

@@ -107,26 +107,40 @@ body{
   background-color: #333;
 }
 
-/* Navbar links */
-.main-nav a {
+/* Style the hamburger menu */
+.main-nav a.fa.fa-bars {
+  background: black;
+  display: inline-block;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
-.main-nav div {
-  float: left;
+/* Navbar links */
+.nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+ 
+}
+
+.nav div {
   color: lightblue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: inline-block;
 }
 
-.main-nav span {
+.nav span {
   float: right;
   color: lightblue;
   text-align: auto;
@@ -139,11 +153,11 @@ body{
   transition: all .5s;
 }
 
-.main-nav a:hover {
+.nav a:hover {
   color: lightblue;
 }
 
-.main-nav div:hover {
+.nav div:hover {
   color: red;
 }
 
@@ -280,6 +294,8 @@ input[type=text] {
   border: solid 1px #d9e4ea;
 }
 
+
+
 @media (min-width: 796px){ /* was 796PX 528*/
 
 .fa {
@@ -293,7 +309,7 @@ input[type=text]:focus {
   width: 25%;
   }
   
-.fa.fa-bars {
+.main-nav a.fa.fa-bars {
   display: none;
   /* visiility: hidden; */
 }
