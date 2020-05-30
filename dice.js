@@ -4,7 +4,7 @@ function sleep (timeMs) {
 }
 
 function clickHamburger() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("nav-id");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

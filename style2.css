@@ -108,7 +108,7 @@ body{
 }
 
 /* Style the hamburger menu */
-.main-nav a.fa.fa-bars {
+.main-nav fa.fa-bars {
   background: black;
   display: inline-block;
   float: left;
@@ -120,6 +120,10 @@ body{
   
 }
 
+.nav {
+  display: none;
+}
+
 /* Navbar links */
 .nav a {
   color: #f2f2f2;
@@ -127,17 +131,16 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: inline-block;
  
 }
 
-.nav div {
+#home {
   color: lightblue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: inline-block;
+ 
 }
 
 .nav span {
@@ -301,6 +304,10 @@ input[type=text] {
 .fa {
   width: 50px;
 }
+
+.nav {
+  display: inline-block;
+}
   
   .wrap {
     min-height: calc(100vh - 81.77px);
@@ -309,7 +316,7 @@ input[type=text]:focus {
   width: 25%;
   }
   
-.main-nav a.fa.fa-bars {
+.fa.fa-bars {
   display: none;
   /* visiility: hidden; */
 }
