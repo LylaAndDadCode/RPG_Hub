@@ -122,6 +122,7 @@ body{
 
 .nav {
   display: none;
+  
 }
 
 /* Navbar links */
@@ -131,25 +132,28 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
  
 }
 
-#home {
+#current-view {
   color: lightblue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: inline-block;
  
 }
 
-.nav span {
+.main-nav span {
   float: right;
   color: lightblue;
   text-align: auto;
   padding: 7px 9px; 
   text-decoration: none;
   font-size: 25px;
+  display: inline-block;
 }
 
 .nav a {
@@ -306,6 +310,10 @@ input[type=text] {
 }
 
 .nav {
+  display: inline-block;
+}
+
+.nav a {
   display: inline-block;
 }
   
