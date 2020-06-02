@@ -150,7 +150,7 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: inline-block;
+  display: block;
  
 }
 
@@ -164,8 +164,13 @@ body{
   display: inline-block;
 }
 
+.main-nav a:hover {
+  color: lightblue;
+}
+
 .nav a {
   transition: all .5s;
+  
 }
 
 .nav a:hover {
@@ -173,7 +178,7 @@ body{
 }
 
 .nav div:hover {
-  color: red;
+  color: lightblue;
 }
 
 footer { 
@@ -277,15 +282,7 @@ input[type=text] {
   color: white;
   text-align: left;
 }
-/*
-.hide-on-mobile{
-  display: none;
-}
 
-.hide-on-mobile:hover{
-  display: inline-block;
-}
-*/
 .form-div {  
   text-align: center;
 }
@@ -321,7 +318,8 @@ input[type=text] {
   display: inline-block;
 }
 
-.nav a {
+.nav a,
+#current-view {
   display: inline-block;
 }
   

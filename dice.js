@@ -5,12 +5,12 @@ function sleep (timeMs) {
 
 function clickHamburger() {
   var x = document.getElementById("nav-id");
-  if (x.style.maxHeight == "150px") {
+  if (x.style.maxHeight == "200px") {
     
     x.style.maxHeight = "0px";
   } else {
    
-    x.style.maxHeight = "150px";
+    x.style.maxHeight = "200px";
   }
 }
 
