@@ -87,7 +87,7 @@ body{
     left: 0px;
     opacity: 0.1;
 }
-  
+
  /* 
  .container-dice::before {
       background-image: url("pics/banner_orginal.jpeg"); /*#35586C: 
@@ -244,6 +244,8 @@ input[type=text] {
 .error {
   color: red;
   font: italic bold 12px/30px Georgia, serif;
+  vertical-align: top;
+  display: inline-block;
 }
 /*
 #dice {
