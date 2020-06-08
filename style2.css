@@ -28,6 +28,58 @@ body{
      
 }
 
+.floating-input {
+ & + .floating-label {
+   transition: transform .25s, opacity .25s ease-in-out;
+   transform-origin: 0 0;
+   opacity: .5;
+ }
+}
+
+.floating-label {
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: rgba(white, .1);
+    & + .floating-label {
+      transform: translate(1%, -30%) scale(.8);
+      opacity: .25;
+    }
+  }
+}
+
+.floating-input {
+  &,
+  & + .floating-label {
+    line-height: 1;
+    font: inherit;
+    padding: 1.5em;
+    height: 4em;
+  }
+}
+
+.floating-label-field {
+  & + .floating-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+  }
+}
+
+/* Hide the browser-specific focus styles */
+.floating-input {
+  border-width: 0;
+  color: rgba(#2c3e50, .75);
+  &:focus {
+    outline: 0;
+    box-shadow: 0;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
 
 
 /* Position the navbar container inside the image */
