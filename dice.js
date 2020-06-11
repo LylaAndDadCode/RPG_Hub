@@ -31,6 +31,7 @@ async function roll(numSides, numberDie){
   }
   
   document.getElementById('sum').innerHTML = "";
+
   
   if(numSides >=2 && numberDie >= 1) {
     //make the empty dice
@@ -116,6 +117,7 @@ async function roll(numSides, numberDie){
       errorField("number");
       errorText("numberError", "Must have at least 1 dice");
     }
+    
   }
   
 }

@@ -95,6 +95,7 @@ body{
   justify-content: center;
 }
 
+
 /*
 .container-dice {
   
@@ -239,11 +240,11 @@ footer {
 	background: #d9e4ea;
 }
 
-input[type="text"].error {
+input[type="number"].error {
     border: 2px solid red;
 }
 
-input[type=text] {
+input[type=number] {
   width: 70%;
   box-sizing: border-box;
   border: 2px solid #ccc;
