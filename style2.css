@@ -244,7 +244,7 @@ input[type="number"].error {
     border: 2px solid red;
 }
 
-input[type=number] {
+input[type=number] { 
   width: 70%;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -390,7 +390,7 @@ input[type=text]:focus {
   /* visiility: hidden; */
 }
   
-input[type=text] {
+input[type=number] {
 width: 150px;  
 }
   
